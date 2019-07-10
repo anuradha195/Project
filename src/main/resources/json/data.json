@@ -1,0 +1,119 @@
+{
+    "bucket": [
+        {
+            "startTimeMillis": "1561496400000",
+            "endTimeMillis": "1561582800000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1561526743873074176",
+                            "endTimeNanos": "1561571428794429696",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.google.android.gms:apple:iphone:com.apple.health.b2cdd1e6-c041-4b6d-bd30-0501516e5ed4:derive_step_deltas",
+                            "value": [
+                                {
+                                    "intVal": 6846,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1561582800000",
+            "endTimeMillis": "1561669200000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1561616101745364224",
+                            "endTimeNanos": "1561660463049215488",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.google.android.gms:apple:iphone:com.apple.health.b2cdd1e6-c041-4b6d-bd30-0501516e5ed4:derive_step_deltas",
+                            "value": [
+                                {
+                                    "intVal": 13105,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1561669200000",
+            "endTimeMillis": "1561755600000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1561670957315045376",
+                            "endTimeNanos": "1561749611821228544",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.google.android.gms:apple:iphone:com.apple.health.b2cdd1e6-c041-4b6d-bd30-0501516e5ed4:derive_step_deltas",
+                            "value": [
+                                {
+                                    "intVal": 6386,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1561755600000",
+            "endTimeMillis": "1561842000000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1561795661837215232",
+                            "endTimeNanos": "1561824794174509568",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.google.android.gms:apple:iphone:com.apple.health.b2cdd1e6-c041-4b6d-bd30-0501516e5ed4:derive_step_deltas",
+                            "value": [
+                                {
+                                    "intVal": 6637,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "startTimeMillis": "1561842000000",
+            "endTimeMillis": "1561928400000",
+            "dataset": [
+                {
+                    "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+                    "point": [
+                        {
+                            "startTimeNanos": "1561878756715214336",
+                            "endTimeNanos": "1561913121742539520",
+                            "dataTypeName": "com.google.step_count.delta",
+                            "originDataSourceId": "raw:com.google.step_count.delta:com.google.android.gms:apple:iphone:com.apple.health.b2cdd1e6-c041-4b6d-bd30-0501516e5ed4:derive_step_deltas",
+                            "value": [
+                                {
+                                    "intVal": 57,
+                                    "mapVal": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

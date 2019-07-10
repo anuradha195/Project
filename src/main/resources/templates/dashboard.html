@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+<link href="webjars/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+<script src="webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script>
+
+  function authenticate() {
+    return gapi.auth2.getAuthInstance()
+        .signIn({scope: "https://www.googleapis.com/auth/fitness.activity.read"})
+        .then(function() { console.log("Sign-in successful"); },
+              function(err) { console.error("Error signing in", err); });
+  }
+  function loadClient() {
+    gapi.client.setApiKey("AIzaSyAXaAf_Cl80dF7ddzXC6OjkNrBhZhUX_lU");
+    return gapi.client.load("https://content.googleapis.com/discovery/v1/apis/fitness/v1/rest")
+        .then(function() { console.log("GAPI client loaded for API"); },
+              function(err) { console.error("Error loading GAPI client for API", err); });
+  }
+  // Make sure the client is loaded and sign-in is complete before calling this method.
+  function execute() {
+    return gapi.client.fitness.users.dataset.aggregate({
+      "userId": "me",
+      "resource": {
+        "aggregateBy": [
+          {
+            "dataTypeName": "com.google.step_count.delta",
+            "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:estimated_steps"
+          }
+        ],
+       "endTimeMillis": 1561755600000,
+        "startTimeMillis": 1561669200000,
+        "bucketByTime": {
+          "durationMillis": 86400000
+        }
+      }
+    })
+        .then(function(response) {
+                // Handle the results here (response.result has the parsed body).
+                console.log("Response", response);
+              },
+              function(err) { console.error("Execute error", err); });
+  }
+  gapi.load("client:auth2", function() {
+    gapi.auth2.init({client_id: "658551581640-d482390pbg59l2nrapaa9glopg25vh48.apps.googleusercontent.com"});
+  });
+</script>
+<button onclick="authenticate().then(loadClient)">authorize and load</button>
+<button onclick="execute()">execute</button>
+</head>
+<body>
+<h1 class="display-4 text-center text-white">Welcome!!!</h1>
+<div class="text-center text-white">You are logged in via Google Oauth</div>
+</body>
+</html>

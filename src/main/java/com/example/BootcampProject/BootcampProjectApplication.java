@@ -8,6 +8,7 @@ public class BootcampProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BootcampProjectApplication.class, args);
-	}
+		//https://BootcampProject.com
+	} 
 
 }

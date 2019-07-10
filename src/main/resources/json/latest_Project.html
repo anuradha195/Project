@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+ 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+window.onload = function() { 
+ console.log("call invoked");
+	var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+    	console.log("call invoked, before if");
+         if (xmlhttp.readyState==4 && xmlhttp.status==200){
+          console.log('xmlhttp.readyState=',xmlhttp.readyState);
+          console.log('xmlhttp.status=',xmlhttp.status);
+          console.log('response=',xmlhttp.responseText);
+			let jsonObject = JSON.parse(xmlhttp.responseText);
+            var chart = new CanvasJS.Chart("chartContainer", jsonObject);
+            chart.render();
+        }
+    }
+    xmlhttp.open("GET", "http://localhost:8080/data", true);
+    xmlhttp.send();
+
+
+  
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
