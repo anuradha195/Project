@@ -1,8 +1,8 @@
 {
  "bucket": [
   {
-   "startTimeMillis": "1562274000414",
-   "endTimeMillis": "1562360400414",
+   "startTimeMillis": "1562274000323",
+   "endTimeMillis": "1562360400323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -24,8 +24,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562360400414",
-   "endTimeMillis": "1562446800414",
+   "startTimeMillis": "1562360400323",
+   "endTimeMillis": "1562446800323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -47,8 +47,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562446800414",
-   "endTimeMillis": "1562533200414",
+   "startTimeMillis": "1562446800323",
+   "endTimeMillis": "1562533200323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -70,8 +70,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562533200414",
-   "endTimeMillis": "1562619600414",
+   "startTimeMillis": "1562533200323",
+   "endTimeMillis": "1562619600323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -93,8 +93,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562619600414",
-   "endTimeMillis": "1562706000414",
+   "startTimeMillis": "1562619600323",
+   "endTimeMillis": "1562706000323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -116,8 +116,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562706000414",
-   "endTimeMillis": "1562792400414",
+   "startTimeMillis": "1562706000323",
+   "endTimeMillis": "1562792400323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
@@ -139,8 +139,8 @@
    ]
   },
   {
-   "startTimeMillis": "1562792400414",
-   "endTimeMillis": "1562878800414",
+   "startTimeMillis": "1562792400323",
+   "endTimeMillis": "1562878800323",
    "dataset": [
     {
      "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",

@@ -1,11 +1,12 @@
 package com.example.BootcampProject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ChartArray {
 	
 	String type;
-	List<Integer> datapoints;
+	ArrayList<Integer> datapoints;
 	public String getType() {
 		return type;
 	}
@@ -15,7 +16,7 @@ public class ChartArray {
 	public List<Integer> getDatapoints() {
 		return datapoints;
 	}
-	public void setDatapoints(List<Integer> datapoints) {
+	public void setDatapoints(ArrayList<Integer> datapoints) {
 		this.datapoints = datapoints;
 	}
 
